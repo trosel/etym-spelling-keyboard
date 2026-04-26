@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>17.0</KeymanDeveloperVersion>
+    <FileVersion>7.0</FileVersion>
+  </System>
+  <Options>
+    <ReadmeFile>readme.htm</ReadmeFile>
+    <GraphicFile></GraphicFile>
+    <ExecuteProgram></ExecuteProgram>
+    <MSIFileName></MSIFileName>
+    <MSIOptions></MSIOptions>
+    <FollowKeyboardVersion/>
+  </Options>
+  <StartMenu>
+    <AddUninstallEntry/>
+    <Items>
+      <Item>
+        <Name>Welcome</Name>
+        <FileName>welcome.htm</FileName>
+      </Item>
+    </Items>
+  </StartMenu>
+  <Info>
+    <Name>Etymological English</Name>
+    <Copyright>© 2026</Copyright>
+    <Author URL="mailto:CHANGEME@example.com">TBD</Author>
+    <WebSite URL="https://github.com/CHANGEME/etym-spelling-keyboard">Project page</WebSite>
+    <Version>1.0</Version>
+    <Description>QWERTY-shaped keyboard for an etymology-driven English orthography. Q-position types æ, K-position types ’, V-position types ·.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\build\english_etym.kmx</Name>
+      <Description>Keyboard Etymological English</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>..\build\english_etym.js</Name>
+      <Description>Keyman web/touch keyboard</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.js</FileType>
+    </File>
+    <File>
+      <Name>..\build\english_etym.kvk</Name>
+      <Description>On-screen keyboard</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.kvk</FileType>
+    </File>
+  </Files>
+  <Keyboards>
+    <Keyboard>
+      <Name>Etymological English</Name>
+      <ID>english_etym</ID>
+      <Version>1.0</Version>
+      <RTL>False</RTL>
+      <OSKFont></OSKFont>
+      <DisplayFont></DisplayFont>
+      <Languages>
+        <Language ID="en-x-etym">English (Etymological)</Language>
+      </Languages>
+    </Keyboard>
+  </Keyboards>
+</Package>

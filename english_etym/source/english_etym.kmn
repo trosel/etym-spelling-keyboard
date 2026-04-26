@@ -1,0 +1,66 @@
+c Etymological English keyboard
+c
+c QWERTY-shaped layout for an etymology-driven English orthography.
+c   Q-position -> æ / Æ
+c   K-position -> ’  (right single quote, U+2019)
+c   V-position -> ·  (middle dot, U+00B7)
+c
+c Right-Alt accesses the buried Latin letters (q, k, v) and diacritic vowels.
+
+store(&VERSION) '10.0'
+store(&NAME) 'Etymological English'
+store(&COPYRIGHT) '© 2026'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'any'
+store(&VISUALKEYBOARD) 'english_etym.kvks'
+store(&LAYOUTFILE) 'english_etym.keyman-touch-layout'
+
+begin Unicode > use(main)
+
+group(main) using keys
+
+c ---- Top row: Q-position becomes æ ----
++ [K_Q]                     > U+00E6     c æ
++ [SHIFT K_Q]               > U+00C6     c Æ
++ [RALT K_Q]                > 'q'        c original q
++ [RALT SHIFT K_Q]          > 'Q'
+
+c ---- Middle row: K-position becomes ’ ----
++ [K_K]                     > U+2019     c ’
++ [SHIFT K_K]               > U+2019     c (same on shift; change if you want “ etc.)
++ [RALT K_K]                > 'k'
++ [RALT SHIFT K_K]          > 'K'
+
+c ---- Bottom row: V-position becomes · ----
++ [K_V]                     > U+00B7     c ·
++ [SHIFT K_V]               > U+00B7
++ [RALT K_V]                > 'v'
++ [RALT SHIFT K_V]          > 'V'
+
+c ---- Right-Alt access to longpress alts ----
+c c -> q (first), k (second)
++ [RALT K_C]                > 'q'
++ [RALT SHIFT K_C]          > 'k'
+
+c b -> v ; f -> v
++ [RALT K_B]                > 'v'
++ [RALT K_F]                > 'v'
+
+c i -> į (first), ị (second)
++ [RALT K_I]                > U+012F     c į
++ [RALT SHIFT K_I]          > U+1ECB     c ị
+
+c a -> ạ (first), ą (second)
++ [RALT K_A]                > U+1EA1     c ạ
++ [RALT SHIFT K_A]          > U+0105     c ą
+
+c u -> ų
++ [RALT K_U]                > U+0173     c ų
+
+c e -> ẹ (first), œ (second)
++ [RALT K_E]                > U+1EB9     c ẹ
++ [RALT SHIFT K_E]          > U+0153     c œ
+
+c ---- Everything else: pass through ----
+c (Keyman's default behavior is to output the typed key when no rule matches,
+c  so we don't need to enumerate the rest of the alphabet, digits, or punctuation.)

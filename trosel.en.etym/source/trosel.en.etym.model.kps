@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package>
+  <System>
+    <KeymanDeveloperVersion>17.0</KeymanDeveloperVersion>
+    <FileVersion>12.0</FileVersion>
+  </System>
+  <Options>
+    <ReadmeFile>readme.htm</ReadmeFile>
+    <GraphicFile></GraphicFile>
+  </Options>
+  <Info>
+    <Name>Etymological English Predictive Model</Name>
+    <Copyright>© 2026</Copyright>
+    <Author URL="mailto:CHANGEME@example.com">TBD</Author>
+    <WebSite URL="https://github.com/CHANGEME/etym-spelling-keyboard">Project page</WebSite>
+    <Version>1.0</Version>
+    <Description>Predictive text model for the etymology-driven English orthography typed with the english_etym keyboard.</Description>
+  </Info>
+  <Files>
+    <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>..\build\trosel.en.etym.model.js</Name>
+      <Description>Lexical model</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.model.js</FileType>
+    </File>
+  </Files>
+  <LexicalModels>
+    <LexicalModel>
+      <Name>Etymological English Predictive Model</Name>
+      <ID>trosel.en.etym</ID>
+      <Version>1.0</Version>
+      <Languages>
+        <Language ID="en-x-etym">English (Etymological)</Language>
+      </Languages>
+    </LexicalModel>
+  </LexicalModels>
+</Package>
